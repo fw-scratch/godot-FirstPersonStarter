@@ -20,9 +20,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
 [node name="Wall1" parent="ArenaGeometry" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.75, -20 )
 
-[node name="Wall2" parent="ArenaGeometry" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.75, 20 )
-
 [node name="Wall3" parent="ArenaGeometry" instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20, 5.75, 0 )
 
@@ -91,6 +88,22 @@ transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -18, 3.5, 13.5 )
 
 [node name="TooSteep1" parent="ArenaGeometry" instance=ExtResource( 6 )]
 transform = Transform( -3.5, -0.216506, -3.01992e-07, -6.06218, 0.125, -1.51421e-07, 9.87455e-07, 2.32278e-08, -2, 16.5, 5.5, 8.5 )
+
+[node name="Floor3" parent="ArenaGeometry" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 159.888 )
+skeleton = NodePath("../Floor1/Floor1")
+
+[node name="Floor5" parent="ArenaGeometry" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 119.916 )
+skeleton = NodePath("../Floor4")
+
+[node name="Floor2" parent="ArenaGeometry" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39.9719 )
+skeleton = NodePath("../Floor1")
+
+[node name="Floor4" parent="ArenaGeometry" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 79.9438 )
+skeleton = NodePath("../Floor2")
 
 [node name="TooSteep2" parent="ArenaGeometry" instance=ExtResource( 6 )]
 transform = Transform( 3.5, 0.216506, 0, -6.06218, 0.125, 0, 0, 0, 2, -16.5, 5.5, 8.5 )
